@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r-none-org
+# key: <rn
+# --
+
+#+BEGIN_SRC R :session :results none
+$0
+#+END_SRC

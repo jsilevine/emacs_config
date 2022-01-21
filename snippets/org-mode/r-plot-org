@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r-plot-org
+# key: <rp
+# binding: C-c y r p
+# --
+
+#+BEGIN_SRC R :file code/literate/${1:filename}.svg :session :results output graphics file :dir ../../ :exports both
+$0
+#+END_SRC

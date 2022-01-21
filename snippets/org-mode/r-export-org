@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r-export-org
+# key: <rx
+# --
+
+#+BEGIN_SRC R :session :results output :exports both
+$0
+#+END_SRC

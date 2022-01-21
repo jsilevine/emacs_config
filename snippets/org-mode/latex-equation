@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: latex-equation
+# key: <le
+# --
+
+\begin{equation}
+
+    $0
+
+\end{equation}

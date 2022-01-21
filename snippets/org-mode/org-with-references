@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: org-with-references
+# key: <or
+# --
+
+#+TITLE: ${1:TITLE}
+#+SUBTITLE: ${2:SUBTITLE}
+#+AUTHOR: Jacob Levine
+#+DATE: `(format-time-string "%Y-%m-%d")`
+
+$0
+
+* References
+  bibliographystyle:apalike
+  bibliography:~/Documents/Science/bibtex/MyLibrary.bib
