@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(ox-pandoc ivy-bibtex org-ref org-roam doom-themes ace-window pdf-tools auctex impatient-mode chess ess poly-R))
+   '(ess-view-data ess-R-data-view auto-complete ccls rtags ox-pandoc ivy-bibtex org-ref org-roam doom-themes ace-window pdf-tools auctex impatient-mode chess ess poly-R))
  '(safe-local-variable-values '((org-html-htmlize-output-type . css))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

@@ -34,7 +34,7 @@
 ;;(add-to-list 'org-structure-template-alist '("r" . "src R"))
 
 (setq org-id-track-globally t)
-(setq org-agenda-files (directory-files-recursively "~/Documents/Science/notes" "org$"))
+(setq org-agenda-files '("~/Documents/Science/notes/"))
 ;; create custom todo keywords
 (setq org-todo-keywords
        '((sequence "TODO(t)" "MAYBE(m)" "STARTED(s)" "WAIT(w)" "|" "DONE(d)" "CANCELLED(c)")))
@@ -46,7 +46,7 @@
 ;; make roam autosyn on startup
 ;;(org-roam-db-autosync-mode)
 ;; configure dailies
-(setq org-roam-dailies-directory "dailies/")
+(setq org-roam-dailies-directory "./")
 
 (setq org-roam-dailies-capture-templates
       '(("d" "default" entry "* %?" :if-new
@@ -163,7 +163,7 @@
 
 
 ;; Default-Frame-Alist
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 (add-to-list 'default-frame-alist '(cursor-color . "white"))
 
 ;; set up buffer orientation to be like Rstudio
@@ -220,6 +220,9 @@
               (local-set-key (kbd "C-c r d") #'kill-buffer-and-window)))
 
 (setq inferior-R-program-name "/usr/local/bin/R")
+
+(setq ess-use-company t)
+(global-set-key (kbd "C-c j") 'company-complete)
 
  (set-popup-rules!
    '(("^\\*R dired"
